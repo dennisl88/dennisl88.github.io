@@ -14,29 +14,43 @@ body {
   bottom: 0;
   width: 100%;
   height: 60px;
+  text-align:center;
   background-color: #222222;
 }
 
-#j-container{
-    position: relative;
-    width: 100%;
-    text-align: center;
-    height: 100vh;
+.footer > .text-muted {
+  margin: 20px 0;
 }
 
-.jumbotron {
-    position:fixed;
+#j-background {
+    position: fixed;
     height: 100vh;
     width: 100%;
+    top: 0;
+    left: 0;
     z-index: -1;
-    background-image: url("../images/temp_background.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-image: url("../images/temp_background.jpg");
+}
+
+.j-container {
+    position: relative;
+  #ex  width: 100%;
+    height: 100vh;
+}
+
+.jumbotron {
+    /*position: fixed;
+    height: 100vh;
+    width: 100%;
     top: 0;
-    left: 0;
-    padding-top: calc(50vh - 170px / 2);
+    left: 0;*/
+    padding-top: calc(30vh);
+    text-align: center;
+    background: transparent;
 }
 
 #links {
@@ -44,11 +58,7 @@ body {
     height: 50px;
 }
 
-.j-items {
-    
-}
-
-.name-box#name {
+#name {
     font-size: 6em;
     margin-bottom: 20px;
     text-shadow: #333 1px 1px;
@@ -56,3 +66,32 @@ body {
     color: #EDEDED;
 }
 
+.main { 
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.row div{
+    -webkit-transition:width 0.3s ease, margin 0.3s ease;
+}
+
+#index-about {
+  background:url("../images/temp_bg_1.jpg");
+  background-size:cover
+}
+
+#project-1 {
+  background:url("../images/temp_bg_1.jpg");
+  background-size:cover
+}
+
+#project-2 {
+  background:url("../images/temp_bg_1.jpg");
+  background-size:cover
+}
+
+#experience {
+  background:url("../images/temp_bg_2.jpg");
+  background-size:cover
+}
