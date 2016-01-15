@@ -8,17 +8,11 @@ body {
   overflow-x: hidden;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 200px;
-  text-align:center;
-  background-color: #222222;
-}
-
-.footer > .text-muted {
-  margin: 80px 0;
+@media (min-width:768px){
+    .navbar {
+        background: transparent;
+        border-color: transparent;
+    }
 }
 
 #j-background {
@@ -104,4 +98,17 @@ body {
 
 #summary {
     text-align:center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  text-align:center;
+  background-color: #222222;
+}
+
+.footer > .text-muted {
+  margin: 80px 0;
 }

@@ -7,7 +7,10 @@
     <title>Dennis Lee</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <script src="js/jquery-2.1.4.min.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
     <script src="js/scripts.js"></script>
     <!--link rel="stylesheet" href="stylesheets/github-dark.css">
     <!--script src="javascripts/respond.js"></script-->
@@ -19,7 +22,30 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <span id="title">dennislee.me</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="page-scroll" href="#index-about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#project-1">Experience</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <span id="j-background"></span>
 
     <div class="j-container">
@@ -99,7 +125,5 @@
     </footer>
 
     <!--[if !IE]><script>fismcale(document);</script><![endif]-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
 </html>
