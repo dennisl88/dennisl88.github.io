@@ -1,4 +1,4 @@
-/*$( document ).ready(function() {
+$( document ).ready(function() {
     var heights = $(".main").map(function() {
         return $(this).height();
     }).get(),
@@ -7,10 +7,14 @@
 
     $(".main").height(maxHeight);
 });
-*/
-$('a').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 1000);
-    return false;
+
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
 });
+
