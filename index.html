@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dennis Lee</title>
+    <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <script src="js/jquery-2.1.4.min.js"></script>
@@ -20,23 +21,22 @@
   </head>
 
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <span id="title">dennislee.me</span>
+                    <span id="title" style="color:white">dennislee.me</span>
                 </a>
             </div>
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a class="page-scroll" href="#index-about">About</a>
+                        <a class="page-scroll" href="#about" style="color:white">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#project-1">Experience</a>
+                        <a class="page-scroll" href="#project-1" style="color:white">Experience</a>
                     </li>
                 </ul>
             </div>
@@ -48,20 +48,20 @@
     <div class="j-container">
         <div class="jumbotron">
           <div id="name">
-            Dennis Lee (Under Construction)
+            Dennis Lee
           </div>
           <div id="links">
+            <a href="mailto:dennisl88@berkeley.edu">
+              <span class="glyphicon glyphicon-envelope fade social-glyph"></span>
+            </a>
             <a href="https://www.github.com/dennisl88">
-              <img src="./images/temp_logo.png">
+              <img src="./images/Github.png" class="fade social">
             </a>
             <a href="https://www.linkedin.com/in/dennisl88">
-              <img src="./images/temp_logo.png">
+              <img src="./images/Linkedin.png" class="fade social">
             </a>
-            <a href="mailto:dennisl88@berkeley.edu">
-              <img src="./images/temp_logo.png">
-            </a>
-            <a href="files/Resume-DennisLee.pdf">
-              <img src="./images/temp_logo.png">
+            <a href="files/Dennis Lee - Resume.pdf">
+              <span class="glyphicon glyphicon-file fade social-glyph"></span>
             </a>
           </div>
         </div>
@@ -69,48 +69,53 @@
 
     <div class="content container-fluid">
         <div class="row">
-            <div id="index-about" class="main col-md-8 col-sm-12">
+            <div id="about" class="main col-md-8 col-sm-12">
                 <h1>Hello</h1>
-                <h3>Something about me <br>
-                    Something about me <br>
-                    Something about me <br>
-                    Something about me <br>
-                    Something about me <br>
-                    Something about me <br>
-                    Something about me <br>
-                    Something about me <br>
-                    Something about me <br>
+                <h3>My name is Dennis Lee <br>
+                    I'm an undergraduate studying electrical engineering and computer science at the University of California, Berkeley. I'm willing to learn anything, but I'm especially interested in machine learning and artificial intelligence. In my free time, I enjoy gaming and raising fish.
                 </h3>
             </div>
             <div id="project-1" class="main col-md-4 col-sm-6">
-                <h1>This is project 1</h1>
+                <h1>Strategy Game AI<br><br></h1>
+                <h2>Computer opponent that learns from itself</h2>
             </div>
             <div id="project-2" class="main col-md-4 col-sm-6">
-                <h1>This is project 2</h1>
+                <h1>ShakeSpear<br><br></h1>
+                <h2>Generates a short dialogue<br>Mimics Shakespeare's style</h2>
             </div>
-            <div id="project-2" class="main col-md-4 col-sm-6">
-                <h1>This is project 3</h1>
+            <div id="project-3" class="main col-md-4 col-sm-6">
+                <h1>Contour Map Generator<br><br></h1>
+                <h2>Creates a contour map <br> Renders in 3D</h2>
             </div>
-            <div id="project-2" class="main col-md-4 col-sm-6">
-                <h1>This is project 4</h1>
+            <div id="project-4" class="main col-md-4 col-sm-6">
+                <h1>This website!</h1>
             </div>
         </div>
     </div>
     
     <div class="content container-fluid" id="experience">
         <div id="summary">
-            <h1>Experience</h1>
-            <h3>Duck duck duck duck goose<br>
-            Chicken turkey<br>
-            Flamingo</h3>
+            <h1>Experience<br></h1>
         </div>
         <ul class="list-group col-md-6">
-            <li class="list-group-item">Skills</li>
+            <li class="list-group-item" id="list-head">Skills</li>
             <li class="list-group-item">Java</li>
+            <li class="list-group-item">Python</li>
+            <li class="list-group-item">Scheme</li>
+            <li class="list-group-item">3D Modelling</li>
+            <li class="list-group-item">HTML5/CSS3/Javascript</li>
+            <li class="list-group-item">C/C++</li>
+            <li class="list-group-item">MatLab</li>
+            
         </ul>
         <ul class="list-group col-md-6">
-            <li class="list-group-item">Coursework</li>
+            <li class="list-group-item" id="list-head">Coursework</li>
+            <li class="list-group-item">Structure and Interpretation of Computer Programs</li>
             <li class="list-group-item">Data Structures</li>
+            <li class="list-group-item">Designing Information Devices and Systems</li>
+            <li class="list-group-item">Linear Algebra</li>
+            <li class="list-group-item">Discrete Math</li>
+            <li class="list-group-item">Design and Analysis of Algorithms</li>
             <li class="list-group-item">Machine Learning</li>
         </ul>
     </div>
@@ -121,7 +126,5 @@
           <a href="https://github.com/dennisl88/dennisl88.github.io">GitHub</a>
         </p>
     </footer>
-
-    <!--[if !IE]><script>fismcale(document);</script><![endif]-->
   </body>
 </html>
