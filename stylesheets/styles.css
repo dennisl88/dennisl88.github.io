@@ -7,6 +7,9 @@ body {
   margin-bottom: 200px;
   overflow-x: hidden;
 }
+.navbar-collapse {
+    background:#5595AB; /*replace with desired color*/ 
+} 
 
 @media (min-width:768px){
     .navbar {
@@ -14,6 +17,9 @@ body {
         border-color: transparent;
         color:white;
     }
+    .navbar-collapse {
+        background: transparent;
+    } 
 }
 
 #j-background {
@@ -43,8 +49,13 @@ body {
 }
 
 #links {
-    margin-top: 60px;
-    height: 50px;
+    margin-top: 30px;
+}
+
+@media (min-width:768px){
+    #links {
+        margin-top: 60px;
+    }
 }
 
 #name {
@@ -64,24 +75,38 @@ body {
 }
 
 .social {
-    margin: 0px 20px;
-    height: 50px;
+    margin: 0px 10px;
+    height: 30px;
     width: auto;
     vertical-align: top;
 }
 
 .social-glyph {
-    margin: 0px 20px;
-    font-size: 54px;
+    margin: 0px 10px;
+    font-size: 30px;
     color: white;
     top: 0px;
-    line-height: 50px;
+    line-height: 30px;
+}
+
+@media (min-width:768px){
+    .social-glyph {
+        margin: 0px 20px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .social {
+        margin: 0px 20px;
+        height: 50px;
+    }
 }
 
 .main { 
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color:white;
 }
 
 .row div{
@@ -91,38 +116,24 @@ body {
 #about {
   background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/background2.jpg");
   background-size:cover;
-  color:white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  padding-left: 120px;
-  padding-right: 120px;
 }
 
 #project-1 {
   background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/Game.jpg");
-  background-size:cover;
-  color:white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #project-2 {
   background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../images/ShakeSpear.jpg");
-  background-size:cover;
-  color:white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #project-3 {
   background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/terrain.jpg");
   background-size:cover;
-  color:white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #project-4 {
   background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/Website.jpg");
-  background-size:cover;
-  color:white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background-position: center; 
 }
 
 #experience {
@@ -130,6 +141,7 @@ body {
   background-size:cover;
   color:white;
   padding-left: 0px 5%; 
+  padding-right: 0px 5%;
 }
 
 #summary { 
@@ -147,9 +159,23 @@ body {
   background-color:#C4C4C4;
 }
 
-@media (min-width:992px) {
-    .main {
-        padding: 120px 0px;
+/*@media (max-width:768px) {
+    h1{
+        font-size: 24px
+    }
+    h2{
+        font-size: 18px    
+    }
+    h3{
+    }
+}*/
+
+@media (min-width:1200px) {
+    #about {
+        padding: 120px 120px;
+    }
+    .project {
+        padding: 120px 30px;
     }
     #experience {
         padding: 80px 100px;
