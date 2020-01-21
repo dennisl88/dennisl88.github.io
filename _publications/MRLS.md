@@ -1,7 +1,7 @@
 ---
 title: "Mathematical Reasoning in Latent Space"
 collection: publications
-permalink: http://dennisl88.github.io/files/MRLS.pdf
+permalink: /files/MRLS.pdf
 excerpt: ''
 date: 2020-01-01
 venue: ICLR
