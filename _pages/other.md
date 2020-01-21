@@ -4,7 +4,7 @@ title: "Fish!"
 permalink: /other/
 author_profile: true
 ---
-I really like animals, especially tropical freshwater fish. Unfortunately, being a college student, space is limited, but one day I will have an arowana. 
+I really like animals, especially tropical freshwater fish. I currently have a 20L with a colony of Neolamprologus <i>multifasciatus</i> and a 5G with a pea puffer.
 
 Scarlet Badis and Chili Rasboras
 <br/>
